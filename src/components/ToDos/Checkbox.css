@@ -1,0 +1,25 @@
+.checkbox-label {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 5px;
+}
+.checkbox-input{
+    display:none;
+}
+.checkbox-input + .checkbox-display{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #007991;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.checkbox-input:hover + .checkbox-display{
+    border-color: #BCD8C1;
+}
+
+.checkbox-input:checked + .checkbox-display{
+    background-size: cover;
+    background-image: url("check.jpg");
+}
