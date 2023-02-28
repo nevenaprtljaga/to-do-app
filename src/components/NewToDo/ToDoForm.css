@@ -1,0 +1,38 @@
+.new-to-do__controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.new-to-do__control label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.new-to-do__control input{
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 3px solid #222E50;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.new-to-do__actions button{
+    font: inherit;
+    cursor: pointer;
+    padding: 0.6rem;
+    border: 1px solid #222E50;
+    background-color: #222E50;
+    color: #BCD8C1;
+    border-radius: 3px;
+}
+
+.to-do-form{
+padding: 1rem;
+background-color: #439A86;
+margin: 2rem auto;
+width: 50rem;
+max-width: 95%;
+}
