@@ -4,11 +4,15 @@ import "./ToDos.css";
 
 
 function ToDos(props){
+   
     return (
         <Card className="todos">
             {props.items.map((todo) =>(
-                 <ToDoItem
+                 <ToDoItem 
+                    id = {todo.id}
+                    key = {todo.id}
                     title = {todo.title}
+                    onDelete = {props.onDelete}
                  />
             ))}
         </Card>

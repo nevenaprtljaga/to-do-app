@@ -17,6 +17,7 @@
     border: 3px solid #222E50;
     width: 20rem;
     max-width: 100%;
+    background-color: #F9F3DC;
 }
 
 .new-to-do__actions button{

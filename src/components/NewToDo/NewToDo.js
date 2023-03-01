@@ -1,17 +1,18 @@
 import ToDoForm from "./ToDoForm";
-import "./NewToDo.css"
+
 
 function NewToDo(props){
     const onSaveToDoHandler = (enteredTitle) => {
         const toDoData = {
-            enteredTitle,
-            id: Math.random().toString()
+            title: enteredTitle,
+            id: (Math.floor(Math.random()*100)).toString()
         };
         props.onAddToDo(toDoData);
+           
     };
 
     return(
-        <div className="new-to-do">
+        <div>
             <ToDoForm onSaveToDoData={onSaveToDoHandler}/>
         </div>
     )

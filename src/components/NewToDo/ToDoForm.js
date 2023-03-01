@@ -10,9 +10,7 @@ function ToDoForm(props){
     }
     const submitHandler = (event) =>{
         event.preventDefault();
-
         props.onSaveToDoData(enteredTitle);
-        console.log(enteredTitle)
         setEnteredTitle("");
     }
     return (

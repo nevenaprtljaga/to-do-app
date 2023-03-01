@@ -8,14 +8,16 @@ function ToDoItem(props){
     const changeHandler = () => {
         setChecked(!checked);
     }
+    
     return (
+
         <Card className="todo-item">
             <Checkbox>
-                label={props.title}
                 value={checked}
                 onChange={changeHandler}
             </Checkbox>
             <h2>{props.title}</h2>
+            <button onClick={() => props.onDelete(props.id)}>X</button>
         </Card>
     )
 }

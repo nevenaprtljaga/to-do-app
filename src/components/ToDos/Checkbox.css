@@ -20,6 +20,6 @@
 }
 
 .checkbox-input:checked + .checkbox-display{
-    background-size: cover;
+    background-size: contain;
     background-image: url("check.jpg");
 }
